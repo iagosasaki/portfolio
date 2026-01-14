@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iago Sasaki Ramos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia-profissional">Experiência Profissional</a></li>
+                <li><a href="#projetos-habilidades">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <img src="./assets/perfil.png" alt="Foto de Perfil">
+            <div>
+                <h1>Olá, sou o Iago!</h1>
+                <h2>Engenheiro de Software.</h2>
+                <div>
+                    <button>Exp. Profissional</button>
+                    <button>
+                        <a href="./assets/curriculo-iago.pdf" download="Curriculo_Iago_Sasaki" class="botao">Baixar CV</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="experiencia-profissional">
+            <h3>Experiência Profissional</h3>
+            <div>
+                <img src="./assets/Logo_da_Coamo.svg" alt="Coamo">
+                <p>Como Analista de Sistemas focado nos módulos Financeiro e Administrativo, atuo no ciclo completo de desenvolvimento e sustentação de sistemas ERP críticos. Minha experiência abrange desde a fase estratégica, conduzindo processos de discovery e refinamentos de histórias, até a implementação técnica utilizando Uniface (9 e 10), PL/SQL Oracle, ERStudio e integrações via APIs REST com JSON e XML. Além do desenvolvimento, sou responsável pela elaboração de documentações técnicas e materiais de apoio, utilizando Figma para prototipagem e metodologias ágeis como Scrum e Kanban via JIRA. Possuo sólida vivência na gestão de chamados N1, N2 e N3, incluindo suporte especializado fora do expediente para garantir a alta disponibilidade das soluções.</p>
+            </div>
+        </section>
+        <section id="projetos-habilidades">
+            <h3>Projetos</h3>
+            <div class="projeto">
+                <h4>Gerenciador de Férias</h4>
+                <p>O Gerenciador de Férias é uma aplicação Full Stack desenvolvida com o objetivo de centralizar e organizar o planejamento da minha viagem para Salvador-BA, permitindo o cadastro estruturado de itinerários onde cada data pode possuir múltiplos horários e atividades relacionadas. No backend, a solução utiliza Node.js com o framework Fastify e TypeScript para garantir alta performance e segurança de tipos, empregando o Prisma ORM para gerenciar o banco de dados SQLite através de relações de um para muitos. A arquitetura da API foi desenhada de forma modular utilizando o sistema de plugins do Fastify e validação de esquemas com a biblioteca Zod, assegurando a integridade dos dados trafegados via JSON. O frontend foi construído com HTML5, CSS3 e JavaScript.</p>
+                <div class="linguagens">
+                    <img src="./assets/html-5-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/css-3-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/js-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/nodejs-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/typescript-official-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/prisma-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/fastify-icon-svgrepo-com.svg" alt="Arduino">
+                </div>
+            </div>
+            <div class="projeto">
+                <h4>Asana Batch</h4>
+                <p>O Asana Batch é uma solução de automação e Business Intelligence desenvolvida em Python com o objetivo de transformar dados brutos da plataforma Asana em insights visuais acionáveis, resolvendo a complexidade do acompanhamento manual de múltiplos projetos e tarefas. A ferramenta utiliza a biblioteca oficial asana para integração com a API, empregando python-dotenv para a gestão segura de credenciais e Pandas para a manipulação e agregação de grandes volumes de dados. A abordagem técnica destaca-se pelo processamento analítico de produtividade, utilizando as bibliotecas Matplotlib e NumPy para construir dashboards customizados que incluem métricas de conclusão por aluno, distribuição de status e rankings de performance.</p>
+                <div class="linguagens">
+                    <img src="./assets/python-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/asana-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/pandas-svgrepo-com.svg" alt="Arduino">
+                </div>
+            </div>
+            <div class="projeto">
+                <h4>BlocklyControl</h4>
+                <p>Esta plataforma de ensino de robótica permite o controle de um braço robótico de quatro eixos através de uma interface de programação visual baseada na biblioteca Blockly. O projeto utiliza HTML5, CSS3 e JavaScript no frontend para traduzir blocos lógicos em comandos de hardware, comunicando-se com um backend em Python desenvolvido com FastAPI e Pydantic. O controle físico é executado por um microcontrolador ESP32, que utiliza WiFi.h e ESPAsyncWebServer para receber instruções via rede sem fio e gerenciar os servomotores através do driver PCA9685 com a biblioteca Adafruit. A solução oferece uma abordagem prática e acessível para iniciantes e crianças, unindo o desenvolvimento de software moderno à eletrônica para facilitar o aprendizado de estruturas de programação e automação.</p>
+                <div class="linguagens">
+                    <img src="./assets/html-5-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/css-3-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/python-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/arduino-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/fastapi-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/microchip-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/scratch-svgrepo-com.svg" alt="Arduino">
+                </div>
+            </div>
+            <div class="projeto">
+                <h4>PONG</h4>
+                <p>Este projeto consiste em uma implementação de baixo nível do clássico jogo Pong para a plataforma Arduino, desenvolvida para demonstrar a geração de sinal de vídeo analógico e processamento em tempo real em hardware de recursos limitados. A aplicação utiliza a linguagem C++ e a biblioteca TVout para gerenciar a saída de vídeo NTSC, realizando a renderização de gráficos e fontes diretamente na tela. A abordagem técnica destaca-se pela manipulação direta de registradores para controle de entradas e o uso de potenciômetros via conversores analógico-digitais para a movimentação das raquetes. Estruturado sobre uma máquina de estados finitos, o sistema gerencia modos de menu, PvP e treino, implementando uma lógica de física para detecção de colisões e rebatidas dinâmicas.</p>
+                <div class="linguagens">
+                    <img src="./assets/c-file-svgrepo-com.svg" alt="Arduino">
+                    <img src="./assets/arduino-svgrepo-com.svg" alt="Arduino">
+                </div>
+            </div>     
+        </section>
+    </main>
+    <footer id="contato">
+        <div class="footer">
+            <h3>Contato</h3>
+            <p>Vamos trabalhar juntos? Entre em contato por qualquer um dos canais abaixo:</p>
+            <address>
+                <ul class="lista-contatos">
+                    <li class="icon">
+                        <img src="./assets/gmail-svgrepo-com.svg" alt="">
+                    </li>
+                    <li class="icon">
+                        <img src="./assets/whatsapp-svgrepo-com.svg" alt="">
+                    </li>
+                    <li class="icon">
+                        <img src="./assets/github-142-svgrepo-com.svg" alt="">
+                    </li>
+                    <li class="icon">
+                        <img src="./assets/linkedin-svgrepo-com.svg" alt="">
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iago Sasaki Ramos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
